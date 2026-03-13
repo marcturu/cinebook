@@ -16,7 +16,7 @@
         </div>
 
         <form id="form">
-          <div class="form-section">
+          <div class="form-section" id="section-username">
             <label for="username">Username</label>
             <div class="input-wrapper">
               <input
@@ -31,7 +31,7 @@
             <small class="feedback"></small>
           </div>
 
-          <div class="form-section">
+          <div class="form-section" id="section-email">
             <label for="email">Email</label>
             <div class="input-wrapper">
               <input
@@ -46,7 +46,7 @@
             <small class="feedback"></small>
           </div>
 
-          <div class="form-section">
+          <div class="form-section" id="section-password">
             <label for="password">Password</label>
             <div class="input-wrapper">
               <input
@@ -66,15 +66,15 @@
               <span id="securityLabel" class="security-label"></span>
             </div>
             <ul id="passwordRules" class="password-rules">
-              <li id="ruleLength">At least 8 characters</li>
-              <li id="ruleUpper">At least one uppercase letter</li>
-              <li id="ruleLower">At least one lowercase letter</li>
-              <li id="ruleNumber">At least one number</li>
-              <li id="ruleSpecial">At least one special character</li>
+              <li id="rule-length">At least 8 characters</li>
+              <li id="rule-upper">At least one uppercase letter</li>
+              <li id="rule-lower">At least one lowercase letter</li>
+              <li id="rule-number">At least one number</li>
+              <li id="rule-symbol">At least one special character</li>
             </ul>
           </div>
 
-          <div class="form-section">
+          <div class="form-section" id="section-password2">
             <label for="password2">Confirm Password</label>
             <div class="input-wrapper">
               <input
@@ -97,6 +97,7 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
