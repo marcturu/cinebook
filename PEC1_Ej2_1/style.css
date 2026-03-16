@@ -40,7 +40,7 @@ body {
   background-color: var(--color-bg-form);
   border: 2px solid var(--color-border);
   border-radius: 15px;
-  padding: 2.5rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .form-header {
@@ -270,4 +270,22 @@ button:active {
   transform: scale(0.95);
   transition: transform 0.2s;
   box-shadow: 0 4px 12px rgba(255,193,7,0.25)
+}
+
+button.success:before {
+  display: none;
+}
+
+button.success {
+  background-color: var(--success-color) !important;
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+button.success:hover::before {
+  transform: none;
+}
+
+button.success:hover span {
+  color: var(--color-bg);
 }

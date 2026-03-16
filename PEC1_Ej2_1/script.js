@@ -35,8 +35,8 @@ function validateUsername() {
     setFeedback('username', 'Username cannot be empty', false);
     return false;
   }
-  if (val.length < 3) {
-    setFeedback('username', 'Username must be at least 3 characters', false);
+  if (val.length < 3 || val.length > 15) {
+    setFeedback('username', 'Username must be between 3 and 15 characters', false);
     return false
   }
   setFeedback('username', 'Cool username!', true);
@@ -58,6 +58,28 @@ function validateEmail() {
   }
 
   setFeedback('email', 'Valid email!', true);
+  return true;
+}
+
+function validateAge() {
+  var val = getEl('age').value;
+  if (val === '') {
+    setFeedback('age', 'Age cannot be empty', false);
+    return false;
+  }
+  if (!/^\d+$/.test(val)) {
+    setFeedback('age', 'Age must be a number', false);
+    return false;
+  }
+  if (val < 0) {
+    setFeedback('age', 'Hmmm... Is this even possible?', false);
+    return false
+  }
+  if (val >= 1000) {
+    setFeedback('age', 'Whoza! Are you from the future?', false);
+    return false
+  }
+  setFeedback('age', 'Valid age!', true);
   return true;
 }
 
@@ -174,6 +196,9 @@ getEl('username').addEventListener('input', validateUsername);
 getEl('email').addEventListener('blur', validateEmail);
 getEl('email').addEventListener('input', validateEmail);
 
+getEl('age').addEventListener('blur', validateAge);
+getEl('age').addEventListener('input', validateAge);
+
 getEl('password').addEventListener('blur', validatePassword);
 getEl('password').addEventListener('input', validatePassword);
 
@@ -186,18 +211,21 @@ getEl('form').addEventListener('submit', function (e) {
 
   var vu = validateUsername();
   var ve = validateEmail();
+  var va = validateAge();
   var vp = validatePassword();
   var vc = validatePassword2();
 
-  if (vu && ve && vp && vc) {
+  if (vu && ve && va && vp && vc) {
     console.log('Form submitted');
 
+    var inputs = document.querySelectorAll('input');
+    inputs.forEach(function(input) {
+      input.disabled = true;
+    });
+    
     var button = document.querySelector('button');
-
-    /*button.classList.add('success');*/
     button.querySelector('span').textContent = 'Account created!';
-    button.style.background = 'var(--succes-color)';
-    button.style.transform = 'scale(1.05)';
+    button.classList.add('success');
     button.disabled = true;
 
     confetti({
