@@ -87,7 +87,6 @@ function validateAge() {
 var ALLOWED_SYMBOLS = /[`~!@#$%^&*()_+\-={}\|[\]\\:";<>?,./\']/;
 var RULES_IDS = ['length', 'upper', 'lower', 'number', 'symbol'];
 
-/* Comprueba que la contraseña tenga mayúsculas, minúsculas, cifras, símbolos y >= 8 carácteres */
 function checkPasswordRules(password) {
   return {
     length: password.length >= 8,

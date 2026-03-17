@@ -8,8 +8,8 @@
   --color-text-secondary: #6b6b7a;
   --color-focus: #c8f135;
   --color-btn-bg-hover: #e6ac00;
-  --success-color: #2ecc71;
-  --error-color: #e74c3c;
+  --color-success: #2ecc71;
+  --color-error: #e74c3c;
 }
 
 *,
@@ -76,11 +76,11 @@ body {
 }
 
 .form-section.valid label {
-  color: var(--success-color);
+  color: var(--color-success);
 }
 
 .form-section.invalid label {
-  color: var(--error-color);
+  color: var(--color-error);
 }
 
 .input-wrapper {
@@ -110,12 +110,12 @@ body {
 }
 
 .form-section.valid .input-wrapper input {
-  border-color: var(--success-color);
+  border-color: var(--color-success);
   box-shadow: 0 0 0 3px rgba(200,241,53,0.1);
 }
 
 .form-section.invalid .input-wrapper input {
-  border-color: var(--error-color);
+  border-color: var(--color-error);
   box-shadow: 0 0 0 3px rgba(255,92,92,0.12);
 }
 
@@ -131,11 +131,11 @@ body {
 }
 
 .form-section.valid .input-icon {
-  color: var(--success-color);
+  color: var(--color-success);
 }
 
 .form-section.invalid .input-icon {
-  color: var(--error-color);
+  color: var(--color-error);
 }
 
 .feedback {
@@ -148,11 +148,11 @@ body {
 }
 
 .form-section.valid .feedback {
-  color: var(--success-color);
+  color: var(--color-success);
 }
 
 .form-section.invalid .feedback {
-  color: var(--error-color);
+  color: var(--color-error);
 }
 
 .password-security {
@@ -201,11 +201,11 @@ body {
 }
 
 .password-rules li.pass {
-  color: var(--success-color);
+  color: var(--color-success);
 }
 
 .password-rules li.fail {
-  color: var(--error-color);
+  color: var(--color-error);
 }
 
 button {
@@ -277,7 +277,7 @@ button.success:before {
 }
 
 button.success {
-  background-color: var(--success-color) !important;
+  background-color: var(--color-success) !important;
   opacity: 0.75;
   cursor: not-allowed;
 }

@@ -1,3 +1,5 @@
+/* ----- Elementos DOM ----- */
+
 var currencyOne = document.getElementById('currency-one');
 var currencyTwo = document.getElementById('currency-two');
 var amountOne = document.getElementById('amount-one');
@@ -38,7 +40,7 @@ function checkNegatives(input) {
   }
 }
 
-/* ----- Calculos ----- */
+/* ----- Calculos con la API ----- */
 
 function calculateExchange() {
   checkNegatives(amountOne);
