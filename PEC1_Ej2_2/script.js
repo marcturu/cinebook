@@ -33,11 +33,10 @@ function hideError() {
 /* ----- Validaciones ----- */
 
 function checkNegatives(input) {
-  if (input.value < 0 || input.value === '') {
+  if (input.value !== '' && input.value < 0) {
     input.value = 0;
   }
 }
-
 
 /* ----- Calculos ----- */
 

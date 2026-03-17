@@ -91,6 +91,7 @@ body {
   background-size: 0.75em 0.75em;
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .currency input {
@@ -115,7 +116,7 @@ body {
 }
 
 .rate {
-  color: var(--color-text);
+  color: var(--color-text-secondary);
   font-size: 1rem;
   padding: 0 0.5rem;
 }
@@ -124,7 +125,7 @@ button {
   outline: none;
   cursor: pointer;
   border: none;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem clamp(1.5rem, 5vw, 2rem);
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
