@@ -231,4 +231,17 @@ p.text span {
   .seat:nth-last-of-type(2) {
     margin-left: 0.25rem;
   }
+  
+  .legend {
+    font-size: 0.75rem;
+    padding: 0.3rem 0;
+  }
+
+  .legend li {
+    margin: 0 0.5rem;
+  }
+
+  .legend li small {
+    margin-left: 0.25rem;
+  }
 }
