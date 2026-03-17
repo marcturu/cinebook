@@ -6,10 +6,8 @@
   --color-border: #2a2a32;
   --color-text: #f0efe8;
   --color-text-secondary: #6b6b7a;
-  --color-focus: #c8f135;
   --color-btn-bg-hover: #e6ac00;
-  --success-color: #2ecc71;
-  --error-color: #e74c3c;
+  --color-error: #e74c3c;
 }
 
 *,
@@ -112,14 +110,14 @@ body {
 }
 
 .rate-display.loading {
-  color: var(--color-accent-gold);
-  border-color: var(--color-accent-gold);
+  color: var(--color-text-secondary);
+  border-color: var(--color-text-secondary);
   animation: pulse 1s infinite alternate;
 }
 
 .rate-display.ready {
-  color: var(--color-success);
-  border-color: var(--color-success);
+  color: var(--color-btn-bg-hover);
+  border-color: var(--color-btn-bg-hover);
 }
  
 .rate-display.error {
