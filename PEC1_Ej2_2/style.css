@@ -182,3 +182,37 @@ button:active {
   transition: transform 0.2s;
   box-shadow: 0 4px 12px rgba(255,193,7,0.25)
 }
+
+.loading-indicator {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.loading-indicator.visible {
+  display: flex;
+}
+
+.error-message {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+  border-radius: 15px;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.error-message.visible {
+  display: flex;
+}
+
+.error-message svg {
+  flex-shrink: 0;
+}
