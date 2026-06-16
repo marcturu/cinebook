@@ -1,4 +1,4 @@
-# 🎬 - Cinebook
+# <img src="movie-seat-booking/img/movie.svg" alt="MovieLogo" width="100" /> - Cinebook
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  
 <sub>🗓️ Developed in March 2026</sub>
