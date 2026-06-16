@@ -40,3 +40,16 @@ Open the **index.html** file from each folder with *Live Server* (for example).
 - Base prices are in EUR. When changing currency, the API is queried in real time and both the movie select labels and the total price are updated.
 - Decimals are excluded for currencies that do not conventionally use them (JPY, KRW, CLP, etc.).
 - The loading indicator is a text message, unlike **/rate-exchange-calculator**, which uses an animated image.
+
+---
+
+## 📷 Screenshots 
+
+### Register:
+![Register](screenshots/register.png)
+
+### Rate exchange calculator:
+![RateExchangeCalculator](screenshots/rate-exchange-calculator.png)  
+
+### Movie seat booking:
+![Mobile(MovieSeatBooking)](screenshots/movie-seat-booking.png)
