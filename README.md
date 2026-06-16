@@ -10,7 +10,7 @@ It was coded using ES5 intentionally, which implies string concatenation using `
 
 - **/register**: Form with *username*, *email*, *age*, *password*, and *confirm password*, and validators for each field.
 - **/rate-exchange-calculator**: Currency exchange calculator with selectable currencies, real-time conversion and exchange rate display using `https://api.exchangerate-api.com/v4/latest/`.
-- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the rate exchange calculator).
+- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the *rate exchange calculator* and `localStorage`).
 
 ## 🛠 Installation & Setup
 
