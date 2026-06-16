@@ -1,46 +1,42 @@
-# ⚡ PEC 1 - Desarrollo Frontend con Framework JavaScript
+# 🎬 - Cinebook
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  
-<sub>🗓️ Desarrollado en marzo del 2026</sub>
+<sub>🗓️ Developed in March 2026</sub>
 
-| Campo | Valor |
-|---|---|
-| **Login UOC** | mturur |
-| **Nombre** | Marc Turu Roca |
-| **Máster** | Desarrollo de Sitios y Aplicaciones Web |
+This project consists of three independent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
+It was coded using ES5 intentionally, which implies string concatenation using `+` instead of template literals, `var` instead of `const` / `let`. and functions declared with `function` instead of arrow functions.  
 
---- 
+## ✅ Features
 
-## Decisiones técnicas generales
+- **/register**: Form with *username*, *email*, *age*, *password*, and *confirm password*, and validators for each field.
+- **/rate-exchange-calculator**: Currency exchange calculator with selectable currencies, real-time conversion and exchange rate display using `https://api.exchangerate-api.com/v4/latest/`.
+- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the rate exchange calculator).
 
-Este proyecto usa ES5 de forma intencionada, lo que implica:
+## 🛠 Installation & Setup
 
-- Concatenación de strings con `+` en vez de template literals.
-- `var` en vez de `const` / `let`.
-- Funciones declaradas con `function` en vez de arrow functions.
+### 1. Clone the repository
+```bash
+git clone https://github.com/marcturu/cinebook.git
+```
 
-### Estructura de ramas
+### 2. Run locally
+Open the **index.html** file from each folder with *Live Server* (for example).
 
-Se ha trabajado con ramas Git a pesar de ser un proyecto individual, con el objetivo de mantener un historial limpio y organizado. Los merges se han realizado con `--no-ff` para preservar el commit de merge aunque la rama base no hubiera cambiado.
+## Exercises
 
-## Ejercicios
+### /register (1)
+- Validation of `username` between 3 and 15 characters.
+- Validation of `email` using a custom `emailRegex`.
+- Validation of `age` between 0 and 100 years.
+- Validation of `password` with at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character from `ALLOWED_SYMBOLS`.
+- Validation of `confirm password` to match `password`.
+- The `age` field is treated as `text` instead of `number` to allow proper JavaScript validation (`value` returns `''` when it contains letters).
+- Empty fields are checked before applying more specific validations to improve user feedback.
 
-### PEC1_Ej2_1 - Formulario con validación
-- Validación extra: máximo de 15 caracteres para el `username`.
-- El campo `age` se trata como `text` en vez de `number` para poder validar correctamente desde JavaScript (`value` devuelve `''` cuando contiene letras).
-- Se comprueba que los campos no estén vacíos antes de las validaciones más específicas, para mejorar la comunicación con el usuario.
+### /rate-exchange-calculator (2)
+- Using `Shift+Ctrl+R` makes it easier to observe the loading state with an animated image.
 
-### PEC1_Ej2_2 - Calculadora de tipo de cambio
-- Con `Shift+Ctrl+R` se puede apreciar mejor el estado de carga con imagen animada.
-
-### PEC1_Ej2_3 - Reserva de asientos
-- Los precios base están en EUR. Al cambiar de moneda se consulta la API en tiempo real y se actualizan tanto los labels del select de películas como el precio total.
-- Se excluyen decimales para monedas que no los usan convencionalmente (JPY, KRW, CLP...).
-- El indicador de carga es un mensaje de texto, a diferencia del **PEC1_Ej2_2** que usa una imagen animada.
-
-### Hotfixes
-Rama dedicada a correcciones menores transversales: variables globales, diseño responsive, comentarios en el código y mejoras de UI.
-
----
-
-> Marc Turu Roca · Máster Universitario de Desarrollo de Sitios y Aplicaciones Web
+### /movie-seat-booking (3)
+- Base prices are in EUR. When changing currency, the API is queried in real time and both the movie select labels and the total price are updated.
+- Decimals are excluded for currencies that do not conventionally use them (JPY, KRW, CLP, etc.).
+- The loading indicator is a text message, unlike **/rate-exchange-calculator**, which uses an animated image.
