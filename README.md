@@ -3,7 +3,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  
 <sub>🗓️ Developed in March 2026</sub>
 
-This project consists of three independent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
+This project consists of three (in)dependent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
 It was coded using ES5 intentionally, which implies string concatenation using `+` instead of template literals, `var` instead of `const` / `let`. and functions declared with `function` instead of arrow functions.  
 
 ## ✅ Features
