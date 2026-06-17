@@ -1,8 +1,6 @@
 # <img src="movie-seat-booking/img/movie.svg" alt="MovieLogo" width="100" /> - Cinebook
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  
-![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css&logoColor=white)  
 <sub>🗓️ Developed in March 2026</sub>
 
 This project consists of three (in)dependent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
