@@ -1,16 +1,26 @@
 # <img src="movie-seat-booking/img/movie.svg" alt="MovieLogo" width="100" /> - Cinebook
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES5-yellow)  
+![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css&logoColor=white)  
 <sub>🗓️ Developed in March 2026</sub>
 
 This project consists of three (in)dependent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
-Those were coded using ES5 intentionally, which implies string concatenation using `+` instead of template literals, `var` instead of `const` / `let` and functions declared with `function` instead of arrow functions.  
+
+It was intentionally developed using **ES5** syntax and features:
+
+- `var` declarations instead of `let` and `const`.
+- Traditional function declarations instead of arrow functions.
+- String concatenation using `+` instead of template literals.
+- DOM manipulation through native browser APIs.
+- Event handling with `addEventListener`.
+- Asynchronous API requests using `fetch`.
 
 ## ✅ Features
 
 - **/register**: Form with *username*, *email*, *age*, *password*, and *confirm password*, and validators for each field.
 - **/rate-exchange-calculator**: Currency exchange calculator with selectable currencies, real-time conversion and exchange rate display using `https://api.exchangerate-api.com/v4/latest/`.
-- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the *rate exchange calculator* and `localStorage`).
+- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the *rate exchange calculator* and `localStorage` for *selected movie*, *selected currency* and *selected seats*).
 
 ## 🛠 Installation & Setup
 
@@ -27,7 +37,7 @@ Open the **index.html** file from each folder with *Live Server* (for example).
 ### /register (1)
 - Validation of `username` between 3 and 15 characters.
 - Validation of `email` using a custom `emailRegex`.
-- Validation of `age` between 0 and 100 years.
+- Validation of `age` between 0 and 999 years.
 - Validation of `password` with at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character from `ALLOWED_SYMBOLS`.
 - Validation of `confirm password` to match `password`.
 - The `age` field is treated as `text` instead of `number` to allow proper JavaScript validation (`value` returns `''` when it contains letters).
