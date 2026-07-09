@@ -6,7 +6,7 @@
 
 <sub>🗓️ Developed in March 2026</sub>
 
-This project consists of three (in)dependent exercises: **/register**, **/rate-exchange-calculator** and **/movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
+This project consists of three (in)dependent exercises: **/1-register**, **/2-rate-exchange-calculator** and **/3-movie-seat-booking**, each one structured with `index.html`, `style.css` and `script.js`.  
 
 It was intentionally developed using **ES5** syntax and features:
 
@@ -19,9 +19,9 @@ It was intentionally developed using **ES5** syntax and features:
 
 ## ✅ Features
 
-- **/register**: Form with *username*, *email*, *age*, *password*, and *confirm password*, and validators for each field.
-- **/rate-exchange-calculator**: Currency exchange calculator with selectable currencies, real-time conversion and exchange rate display using `https://api.exchangerate-api.com/v4/latest/`.
-- **/movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the *rate exchange calculator* and `localStorage` for *selected movie*, *selected currency* and *selected seats*).
+- **/1-register**: Form with *username*, *email*, *age*, *password*, and *confirm password*, and validators for each field.
+- **/2-rate-exchange-calculator**: Currency exchange calculator with selectable currencies, real-time conversion and exchange rate display using `https://api.exchangerate-api.com/v4/latest/`.
+- **/3-movie-seat-booking**: Interactive movie theater seat booking system for different movies with seat selection, occupancy status and total price calculation (using the *rate exchange calculator* and `localStorage` for *selected movie*, *selected currency* and *selected seats*).
 
 ## 🛠 Installation & Setup
 
@@ -35,7 +35,7 @@ Open the **index.html** file from each folder with *Live Server* (for example).
 
 ## Exercises
 
-### /register (1)
+### 1️⃣ /1-register
 - Validation of `username` between 3 and 15 characters.
 - Validation of `email` using a custom `emailRegex`.
 - Validation of `age` between 0 and 999 years.
@@ -44,10 +44,10 @@ Open the **index.html** file from each folder with *Live Server* (for example).
 - The `age` field is treated as `text` instead of `number` to allow proper JavaScript validation (`value` returns `''` when it contains letters).
 - Empty fields are checked before applying more specific validations to improve user feedback.
 
-### /rate-exchange-calculator (2)
+### 2️⃣ /2-rate-exchange-calculator
 - Using `Shift+Ctrl+R` makes it easier to observe the loading state with an animated image.
 
-### /movie-seat-booking (3)
+### 3️⃣ /3-movie-seat-booking
 - Base prices are in EUR. When changing currency, the API is queried in real time and both the movie select labels and the total price are updated.
 - Decimals are excluded for currencies that do not conventionally use them (JPY, KRW, CLP, etc.).
 - The loading indicator is a text message, unlike **/rate-exchange-calculator**, which uses an animated image.
