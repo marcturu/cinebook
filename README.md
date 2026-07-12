@@ -33,7 +33,7 @@ git clone https://github.com/marcturu/cinebook.git
 ### 2. Run locally
 Open the **index.html** file from each folder with *Live Server* (for example).
 
-## Exercises
+## 🎯 Exercises
 
 ### 1️⃣ /1-register
 - Validation of `username` between 3 and 15 characters.
